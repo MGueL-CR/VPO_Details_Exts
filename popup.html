@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VPO Details</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: content-box;
+            font-family: sans-serif;
+        }
+
+        body {
+            display: inline-block;
+            background-color: transparent;
+            border: solid 3px #232323;
+            padding: 0.5rem;
+        }
+
+        .contenedor {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            background-color: whitesmoke;
+            border-radius: 3px;
+        }
+
+        .detalles {
+            display: flex;
+            flex-direction: column;
+            gap: 0.3rem;
+            width: 17rem;
+            color: #232323;
+            text-align: justify;
+            padding: 0.6rem;
+        }
+
+        .titulo {
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .version {
+            font-size: 12px;
+            color: #7fbde7;
+        }
+
+        .descripcion {
+            font-style: italic;
+            font-size: 12px;
+        }
+
+        .credito {
+            font-size: 12px;
+            margin-bottom: 0.5rem;
+        }
+
+        .perfilWeb {
+            text-decoration: none;
+            color: #7fbde7;
+            font-weight: 600;
+        }
+
+        .library {
+            text-align: right;
+            font-style: italic;
+            font-size: x-small;
+            font-weight: 400;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contenedor">
+        <img class="logo" src="src/documento(64px).png" alt="Logo" />
+        <div class="detalles">
+            <span class="titulo">VPO Details <sup class="version">v1.0</sup></span>
+            <span class="descripcion">Mejora la visualización de la Orden de trabajo, organiza los datos y agrega un código de barras / código QR para leer el nombre de la VPO.</span>
+            <span class="credito">Desarrollado por
+                <a class="perfilWeb" href="http://www.linkedin.com/in/mguel-dev" target="_blank">Miguel Mejias
+                    A.</a></span>
+            <span class="library">
+                ** Basado en las librerías
+                <a class="perfilWeb" href="https://davidshimjs.github.io/qrcodejs/" target="_blank">
+                    qrcode.js</a>
+                y
+                <a class="perfilWeb" href="https://lindell.me/JsBarcode/" target="_blank">
+                    JsBarcode.js</a>.
+            </span>
+        </div>
+</body>
+
+</html>

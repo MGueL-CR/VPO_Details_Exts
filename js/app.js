@@ -64,8 +64,11 @@ function formatTable() {
 
     document.getElementsByClassName('title')[0].classList.add('VPOName');
 
-    truncTable(document.querySelector("table").childNodes[1]);
-    //truncTable(document.querySelector("table").childNodes[0]);
+    if (!document.querySelector("table").childNodes[0]) {
+        truncTable(document.querySelector("table").childNodes[0]);
+    }else{
+        truncTable(document.querySelector("table").childNodes[1]);
+    }
 }
 
 // Obtiene la tabla y la acorta a solo las 6 primeras filas del total real,
@@ -286,7 +289,7 @@ function createHeader() {
     let fQtys= createFieldset('Qty:', 'field', 'fQty');
     fQtys.appendChild(createInputs('number', 'inputs', 'iQty'));
 
-    let btns= createDivs('no-border', 'div3');
+    let btns= createDivs('space-fill', 'div3');
     btns.appendChild(createButton('btnChangeCode', 'buttons', 'Tipo QR', 'click', changeTypeCode));
 
     let fields= createDivs('fields', 'fields');

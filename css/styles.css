@@ -97,7 +97,7 @@
 
   .field-set {
     height: 2.5rem;
-    width: 60%;
+    width: 50%;
     border: 1.5px solid #006666;
     border-radius: 0.3rem;
   }
@@ -155,11 +155,11 @@
   .fields {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: start;
     width: 100%;
     max-height: 4.88rem;
     margin-left: 0rem;
-    padding: 0 0.2rem;
+    padding: 0 0.4rem 0 0.2rem;
     gap: 4px;
   }
   
@@ -183,9 +183,9 @@
   
   .inputs {
     width: 100%;
-    min-width: 9.5rem;
+    min-width: 9.0rem;
     line-height: 1.25rem;
-    font-size: small;
+    font-size: medium;
     text-transform: uppercase;
     text-align: center;
     border: none;
@@ -210,7 +210,7 @@
     border-bottom: 4px double #006666;
   }
 
-  .no-border{
+  .space-fill{
     border: none;
   }
   
@@ -296,7 +296,7 @@
     background: #dcdcdc;
     display: flex;
     align-items: center;
-    margin: 1rem 0;
+    margin: 0.5rem 0;
     padding: 0.3rem;
     border-radius: 0.2rem;
     gap: 0.2rem;
@@ -350,6 +350,7 @@
     margin: 0.3rem;
     border-radius: 0.4rem;
     grid-area: 1/1/1/3;
+    border: 2px solid #dcdcdc;
   }
   
   .dscTitle {
@@ -361,4 +362,8 @@
   .dscFull {
     font-size: small;
     text-align: justify;
+  }
+
+  #rName {
+    width: 75%;
   }

@@ -64,7 +64,7 @@ function formatTable() {
 
     document.getElementsByClassName('title')[0].classList.add('VPOName');
 
-    if (!document.querySelector("table").childNodes[0]) {
+    if (typeof document.querySelector("table").childNodes[0] === 'undefined') {
         truncTable(document.querySelector("table").childNodes[0]);
     }else{
         truncTable(document.querySelector("table").childNodes[1]);
@@ -382,6 +382,7 @@ function createModal() {
     // Cuerpo y contenido del Modal
     let bodyModal = createDivs("bodyModal", "bodyModal");
     bodyModal.appendChild(footerModal);
+    bodyModal.appendChild(document.createElement('hr'));
     bodyModal.appendChild(colIzq);
     bodyModal.appendChild(colDer);
     //colIzq.appendChild(footerModal);

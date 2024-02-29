@@ -64,7 +64,7 @@ function formatTable() {
 
     document.getElementsByClassName('title')[0].classList.add('VPOName');
 
-    if (typeof document.querySelector("table").childNodes[0] === 'undefined') {
+    if (typeof document.querySelector("table").childNodes[1] === 'undefined') {
         truncTable(document.querySelector("table").childNodes[0]);
     }else{
         truncTable(document.querySelector("table").childNodes[1]);

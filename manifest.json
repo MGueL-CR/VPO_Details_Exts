@@ -15,7 +15,7 @@
         "48": "/src/documento(64px).png",
         "128": "/src/documento(128px).png"
     },
-    "version": "1.0",
+    "version": "1.02",
     "manifest_version": 3,
     "content_scripts": [
         {
@@ -26,5 +26,6 @@
             "file:///home/*"
           ]
         }
-      ]
+      ],
+    "permissions": ["fileSystem"]
 }
